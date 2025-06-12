@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradnya Patil | Civil Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Existing CSS preserved */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0a0a0a;
+      background-image: url('https://images.unsplash.com/photo-1509228627152-72ae9ae6848c?auto=format&fit=crop&w=1600&q=80');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+      color: #f5f5f5;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: -1;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(0,0,0,0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    nav h1 {
+      font-size: 28px;
+      color: #ff6a00;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #ffa94d;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 64px;
+      color: #ff6a00;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    .btn {
+      padding: 14px 36px;
+      background: #ff6a00;
+      color: #0a0a0a;
+      border: none;
+      border-radius: 50px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #ffa94d;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      color: #ff6a00;
+      border-bottom: 2px solid #ff6a00;
+      display: inline-block;
+      padding-bottom: 8px;
+    }
+    .about p, .contact p {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .skills li {
+      background: rgba(28, 28, 28, 0.85);
+      padding: 20px;
+      border-left: 4px solid #ff6a00;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .project-card {
+      background: rgba(28, 28, 28, 0.9);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s ease;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .project-card .content {
+      padding: 20px;
+    }
+    .project-card h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ffa94d;
+    }
+    .project-card p {
+      font-size: 16px;
+      color: #d4d4d4;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(10,10,10,0.95);
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Pradnya</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Pradnya Patil</h1>
+    <p>Civil Engineer | AutoCAD | Project Management | Estimation</p>
+    <button class="btn">Download Resume</button>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>Hi, I'm Pradnya Patil, a dedicated Civil Engineer passionate about designing sustainable, efficient structures. I specialize in AutoCAD, Estimation, Project Management, and site supervision. With a sharp eye for detail and a strong work ethic, I aim to deliver projects that exceed expectations.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>AutoCAD & 3D Modeling</li>
+      <li>Structural Design & Estimation</li>
+      <li>Site Supervision & DPR</li>
+      <li>Project Management</li>
+      <li>Revit & BIM Modeling</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=80" alt="Building Project">
+      <div class="content">
+        <h3>Commercial Complex Design</h3>
+        <p>Designed and planned a 4-storey commercial complex including structural, electrical, and plumbing layouts using AutoCAD and Revit.</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Construction Supervision">
+      <div class="content">
+        <h3>Residential Supervision</h3>
+        <p>Managed site operations and ensured quality control for a 10-unit residential construction project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: pradnya.patil@example.com</p>
+    <p>Phone: +91-9876543210</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pradnya Patil | Civil Engineer Portfolio</p>
+  </footer>
+
+</body>
+</html>
